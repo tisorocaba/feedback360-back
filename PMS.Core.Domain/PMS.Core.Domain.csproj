@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PMS.Core.Infra.CrossCutting.Cryptography\PMS.Core.Infra.CrossCutting.Cryptography.csproj" />
+    <ProjectReference Include="..\PMS.Core.Infra.CrossCutting\PMS.Core.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>

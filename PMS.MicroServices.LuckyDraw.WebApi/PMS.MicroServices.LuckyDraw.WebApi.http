@@ -1,0 +1,6 @@
+@PMS.MicroServices.LuckyDraw.WebApi_HostAddress = http://localhost:5097
+
+GET {{PMS.MicroServices.LuckyDraw.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

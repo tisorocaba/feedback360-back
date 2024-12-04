@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PMS.Core.Application\PMS.Core.Application.csproj" />
+    <ProjectReference Include="..\PMS.MicroServices.LuckyDraw.BoundedContexts.Networking\PMS.MicroServices.LuckyDraw.BoundedContexts.Networking.csproj" />
+    <ProjectReference Include="..\PMS.MicroServices.LuckyDraw.BoundedContexts.SharedKernel\PMS.MicroServices.LuckyDraw.BoundedContexts.SharedKernel.csproj" />
+    <ProjectReference Include="..\PMS.MicroServices.LuckyDraw.Domain\PMS.MicroServices.LuckyDraw.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\LuckyDrawApplicationResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LuckyDrawApplicationResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\LuckyDrawApplicationResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LuckyDrawApplicationResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

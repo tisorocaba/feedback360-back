@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PMS.Core.Infra.Data.EFCore\PMS.Core.Infra.Data.EFCore.csproj" />
+    <ProjectReference Include="..\PMS.Core.Infra.Data\PMS.Core.Infra.Data.csproj" />
+    <ProjectReference Include="..\PMS.MicroServices.LuckyDraw.BoundedContexts.SharedKernel\PMS.MicroServices.LuckyDraw.BoundedContexts.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>

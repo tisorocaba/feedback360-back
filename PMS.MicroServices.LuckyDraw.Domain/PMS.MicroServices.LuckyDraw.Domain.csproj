@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PMS.Core.Domain\PMS.Core.Domain.csproj" />
+    <ProjectReference Include="..\PMS.Core.Infra.CrossCutting.Cryptography\PMS.Core.Infra.CrossCutting.Cryptography.csproj" />
+    <ProjectReference Include="..\PMS.Core.Infra.CrossCutting.Security\PMS.Core.Infra.CrossCutting.Security.csproj" />
+    <ProjectReference Include="..\PMS.Core.Infra.CrossCutting\PMS.Core.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\PMS.MicroServices.LuckyDraw.Infra.Data.EFCore.SqlServer\PMS.MicroServices.LuckyDraw.Infra.Data.EFCore.SqlServer.csproj" />
+    <ProjectReference Include="..\PMS.MicroServices.LuckyDraw.Infra.Data.MongoDB\PMS.MicroServices.LuckyDraw.Infra.Data.MongoDB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\LuckyDrawDomainResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LuckyDrawDomainResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\LuckyDrawDomainResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LuckyDrawDomainResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body style="font-family: Arial;">
+    <h1>Senha para Acesso ao Resultado da Avaliação 360</h1>
+    <p style="margin-top: 16px;">§§%%$$NAME$$%%§§, </p>
+    <p style="margin-top: 16px;">Informe, em §§%%$$TARGET_URL$$%%§§, seu e-mail institucional e a senha abaixo para acesso ao resultado da Avaliação 360.</p>
+    <p style="margin-top: 32px;"><b>E-mail: </b>§§%%$$EMAIL$$%%§§</p>
+    <p style="margin-top: 32px;"><b>Senha: </b><span id="spanCode">§§%%$$CODE$$%%§§</span></p>
+    <button style="border: none; background-color: #c1e899; height: 40px;" onclick="javascript:copyCodeToClipboard()">Copiar Código</button>
+    <label id="lblResult" style="color: green;"></label>
+    <br />
+    <p style="margin-top: 32px;"><b> Prefeitura Municipal de Sorocaba</b></p>
+
+    <script type="text/javascript">
+        function copyCodeToClipboard() {
+            let spanCode = document.getElementById('spanCode');
+            if (spanCode) {
+                navigator.clipboard.writeText(spanCode.innerText);
+                let lblResult = document.getElementById('lblResult');
+                if (lblResult) {
+                    lblResult.innerText = 'Copiado!';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
